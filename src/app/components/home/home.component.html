@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Poiret+One" rel="stylesheet">
+<div class="backAndLogin">
+  <div class="top">
+    <div class="title">
+      <p>I'd Hike That</p>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>
+      <input placeholder="CITY/ZIP" type="text" [(ngModel)]="zipcode" (keyup.enter)="onEnter($event)">
+      <button mat-raised-button [routerLink]="['/list-of-trails']" (click)="searchBtn()">Search</button>
+    </div>
+  </div>
+</div>

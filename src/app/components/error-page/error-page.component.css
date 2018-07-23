@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+img{
+  width: 100px;
+  margin-top: 40px;
+}
+
+.errorMessage{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 100px;
+}

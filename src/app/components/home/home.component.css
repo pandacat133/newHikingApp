@@ -1,0 +1,24 @@
+.title {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 130px;
+}
+
+.backAndLogin {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../assets/images/adventure-albay-clouds-672358.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}

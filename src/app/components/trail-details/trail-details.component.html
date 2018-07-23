@@ -1,0 +1,34 @@
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Arimo" rel="stylesheet">
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="detailTitle">{{activeTrail?.name}}</mat-card-title>
+    <mat-card-subtitle>{{activeTrail?.location}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h5>{{trailWeather?.main.temp}} &#8457;</h5>
+    <img class="trailImg" *ngIf="activeTrail" [src]="activeTrail.imgMedium">
+    <div class="length">
+      <p><strong>Difficulty:</strong> {{activeTrail?.difficulty}}</p>
+      <p>{{activeTrail?.length}} mi out & back</p>
+      <p>{{activeTrail?.ascent}} ft
+        <mat-icon class="ascent-icon">trending_up</mat-icon>
+      </p>
+    </div>
+    <p><strong>Description:</strong> {{activeTrail?.summary}}</p>
+    <p><strong>Elevation:</strong> High: {{activeTrail?.high}} ft, Low: {{activeTrail?.low}} ft</p>
+    <p><strong>Condition:</strong> {{activeTrail?.conditionStatus}}</p>
+    <p class="possible-stars"><strong>{{activeTrail?.stars}} out of 5 Stars</strong></p>
+    <div class="ratingDiv">
+      <stars [trailRating]="activeTrail?.stars"></stars>
+      <p class="numOfRatings">({{activeTrail?.starVotes}})</p>
+    </div>
+    <div id="reviewsOn" style="display:none;"><strong>Reviews:</strong>
+      <p *ngIf="review">{{review.data}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="detailsBtnContainer">
+    <button mat-raised-button class="backbtn" (click)="back()"><mat-icon>chevron_left</mat-icon> Back</button>
+    <button mat-raised-button (click)="openReviewDialog()"><mat-icon>rate_review</mat-icon> Rate Trail</button>
+    <button mat-raised-button (click)="showReviews()">Show Reviews</button>
+  </mat-card-actions>
+</mat-card>

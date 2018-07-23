@@ -1,0 +1,85 @@
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #4068A5;
+  color: #FFFFFF;
+  margin: 65px 45px 0px 45px;
+}
+
+.listTitle{
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.trailsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.detailsBtnContainer {
+  display: flex;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+button{
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+
+img {
+  width: 100%;
+  margin: 10px auto 15px auto;
+}
+
+mat-card-header {
+  height: 20%;
+}
+
+mat-card-content {
+  height: 20%;
+  font-family: 'Arimo', sans-serif;
+}
+
+@media screen and (max-width: 1079px) {
+  .mat-card {
+    width: 38%;
+  }
+  img {
+    width: 100%;
+    margin: 23px auto 15px auto;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .mat-card {
+    width: 38%;
+    margin: 44px 29px 0px 29px;
+  }
+  img {
+    width: 100%;
+    margin: 23px auto 15px auto;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .mat-card {
+    width: 45%;
+    margin: 5px 5px;
+  }
+  img {
+    width: 100%;
+    margin: 23px auto 15px auto;
+  }
+}
+@media screen and (max-width: 465px) {
+  .mat-card {
+    width: 100%;
+    margin: 5px 10px;
+  }
+}

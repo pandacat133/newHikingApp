@@ -1,0 +1,28 @@
+mat-toolbar {
+  justify-content: space-between;
+  background: linear-gradient(to right, #1A3E28, #C1C742);
+}
+
+button {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+
+.title {
+  display: flex;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 30px;
+  }
+}

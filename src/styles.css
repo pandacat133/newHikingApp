@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* { border-radius: 0 !important; }
+
+body{
+  height: 100%;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
+}

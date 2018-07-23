@@ -1,0 +1,77 @@
+.trailImg {
+  margin: 15px auto;
+  width: 100%;
+}
+
+.backbtn{
+  margin: 0 4px !important;
+}
+
+button {
+  background-color: #ffff;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+
+mat-card {
+  margin: 64px auto 0 auto;
+  background-color: #4068A5;
+  color: #ffffff;
+  max-width: 800px;
+}
+
+mat-card-content {
+  font-family: 'Arimo', sans-serif;
+  margin: 0 10px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+stars {
+  color: #ffb500;
+}
+
+.detailTitle {
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.ratingDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.numOfRatings {
+  margin-left: 10px;
+}
+
+.ascent-icon {
+  font-size: 10px;
+}
+
+.upDownArrows {
+  font-size: 10px;
+  margin: 0;
+}
+
+.length {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detailsBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 475px) {
+  .mat-card {
+    padding: 30px 20px;
+    margin: 1px;
+  }
+}

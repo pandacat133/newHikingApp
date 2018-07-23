@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Shadows+Into+Light" rel="stylesheet">
+<mat-toolbar class="!toolbarContainer">
+  <div class="title" [routerLink]="['/home']">
+    <div>
+      <img src="../assets/images/LogoMakr_3DiHD0.png">
+    </div>
+    <div>I'd Hike That</div>
+  </div>
+  <div>
+    <button *ngIf="!currentUser" (click)="loginBtn()" mat-raised-button [routerLink]="['/home']">Login</button>
+    <button *ngIf="currentUser" (click)="logoutBtn()" mat-raised-button [routerLink]="['']">Logout</button>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
